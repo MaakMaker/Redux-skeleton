@@ -28,6 +28,13 @@ const slice = createSlice({
 export const { bugAdded, bugResolved } = slice.actions
 export default slice.reducer;
 
+// seclector
+
+// export const getUnresolvedBugs = state => {
+//   return state.entities.bugs.filter(bug => !bug.resolved);
+// }
+
+
 
 // Redux toolkit building funcations that make actions, reducer for us,
 // Actions creators
