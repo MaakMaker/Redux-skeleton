@@ -1,4 +1,5 @@
 import { createAction, createReducer, createSlice } from "@reduxjs/toolkit";
+import { createSelector } from 'reselect'
 
 // if you can make reducer and action that is optimise and code lessness and handy and recommned use it
 
@@ -34,6 +35,10 @@ export default slice.reducer;
 //   return state.entities.bugs.filter(bug => !bug.resolved);
 // }
 
+export const getUnresolvedBugs = createSelector(
+  state => state.entities.bugs,
+  bugs => bugs.filter(bug => !bug.resolved),
+)
 
 
 // Redux toolkit building funcations that make actions, reducer for us,
