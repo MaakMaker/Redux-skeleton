@@ -27,7 +27,7 @@ store.dispatch(bugAdded({description : 'Bug 3'}));
 
 // const falseBugs = getUnresolvedBugs(store.getState())
 
-console.log('false bugs list == ', falseBugs)
+// console.log('false bugs list == ', falseBugs)
 
 // console.log(store.getState());
 
